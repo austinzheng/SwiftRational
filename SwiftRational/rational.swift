@@ -126,7 +126,7 @@ public func *(lhs: Rational, rhs: Rational) -> Rational {
 }
 
 public func /(lhs: Rational, rhs: Rational) -> Rational {
-  return (lhs * rhs).inverse!
+  return lhs * (rhs).inverse!
 }
 
 public func += ( inout lhs:Rational, rhs:Rational ) {
