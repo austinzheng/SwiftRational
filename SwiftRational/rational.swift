@@ -43,7 +43,7 @@ public struct Rational : AbsoluteValuable, Comparable, FloatLiteralConvertible, 
   }
 
   // Initialize a Rational from a numerator and a denominator.
-  public init(_ n: Int, _ d: Int) {
+  public init(_ n: Int, _ d:Int=1 ) {
     if d == 0 {
       fatalError("Rational cannot be initialized with a denominator of 0")
     }
@@ -79,6 +79,11 @@ public struct Rational : AbsoluteValuable, Comparable, FloatLiteralConvertible, 
     }
     self.init((value.isSignMinus ? -1 : 1) * lround(n), Int(d))
   }
+	
+  public init( value: Double) {
+    self.init( floatLiteral: value )
+  }
+
 }
 
 
