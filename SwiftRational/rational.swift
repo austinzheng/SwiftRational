@@ -124,6 +124,21 @@ public func /(lhs: Rational, rhs: Rational) -> Rational {
   return (lhs * rhs).inverse!
 }
 
+public func += ( inout lhs:Rational, rhs:Rational ) {
+	lhs = lhs + rhs
+}
+
+public func -= ( inout lhs:Rational, rhs:Rational ) {
+	lhs = lhs - rhs
+}
+
+public func *= ( inout lhs:Rational, rhs:Rational ) {
+	lhs = lhs * rhs
+}
+
+public func /= ( inout lhs:Rational, rhs:Rational ) {
+	lhs = lhs / rhs
+}
 
 // MARK: Supplementary math
 
