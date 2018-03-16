@@ -3,6 +3,8 @@ SwiftRational
 
 A small library implementing support for [rational numbers](http://en.wikipedia.org/wiki/Rational_number) in Swift, as the `Rational` type.
 
+**WARNING**: This is unmaintained proof-of-concept software; **don't use it for anything that actually matters.** Try something like Xiaodi Wu's [NumericAnnex](https://github.com/xwu/NumericAnnex) library instead.
+
 Features
 --------
 
